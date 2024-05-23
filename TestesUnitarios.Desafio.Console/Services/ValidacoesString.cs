@@ -8,6 +8,12 @@ namespace TestesUnitarios.Desafio.Console.Services
             return numeroCaracteres;
         }
 
+        // Não tinha esse contemTexto método implementado
+        public bool ContemTexto(string texto, string textoProcurado)
+        {
+            return texto.Contains(textoProcurado);
+        }
+
         public bool ContemCaractere(string texto, string textoProcurado)
         {
             var contem = texto.Contains(textoProcurado);
